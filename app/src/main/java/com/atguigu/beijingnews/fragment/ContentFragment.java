@@ -1,13 +1,12 @@
 package com.atguigu.beijingnews.fragment;
 
-import android.support.annotation.NonNull;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.RadioGroup;
 
 import com.atguigu.beijingnews.R;
+import com.atguigu.beijingnews.activity.MainActivity;
+import com.atguigu.beijingnews.adapter.ContentFragmentAdapter;
 import com.atguigu.beijingnews.base.BaseFragment;
 import com.atguigu.beijingnews.base.BasePager;
 import com.atguigu.beijingnews.pager.GovaffairPager;
@@ -16,6 +15,8 @@ import com.atguigu.beijingnews.pager.NewsCenterPager;
 import com.atguigu.beijingnews.pager.SettingPager;
 import com.atguigu.beijingnews.pager.SmartServicePager;
 import com.atguigu.beijingnews.utils.LogUtil;
+import com.atguigu.beijingnews.view.NoScrollViewPager;
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 import org.xutils.view.annotation.ViewInject;
 import org.xutils.x;
@@ -29,7 +30,7 @@ import java.util.ArrayList;
 public class ContentFragment extends BaseFragment {
 
     @ViewInject(R.id.viewpager)
-    private ViewPager viewpager;
+    private NoScrollViewPager  viewpager;
     @ViewInject(R.id.rg_main)
     private RadioGroup rg_main;
 
@@ -60,42 +61,65 @@ public class ContentFragment extends BaseFragment {
         basePagers.add(new GovaffairPager(context));
         basePagers.add(new SettingPager(context));
 
+        //设置ViewPager的适配器
+        viewpager.setAdapter(new ContentFragmentAdapter(basePagers));
+
+        //设置RadioGroup选中状态改变的监听
+        rg_main.setOnCheckedChangeListener(new MyOnCheckedChangeListener());
+
+        //监听某个页面被选中时,初始化对应页面的数据
+        viewpager.addOnPageChangeListener(new MyOnPageChangeListener());
+
         //设置默认选中状态
         rg_main.check(R.id.rb_home);
+        basePagers.get(0).initData();
+    }
+    private class MyOnPageChangeListener implements ViewPager.OnPageChangeListener {
+        @Override
+        public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
-        //设置ViewPager的适配器
-        viewpager.setAdapter(new ContentFragmentAdapter());
+        }
+
+        //当某个页面被选中时,回调此方法
+        @Override
+        public void onPageSelected(int position) {
+            basePagers.get(position).initData();
+        }
+
+        @Override
+        public void onPageScrollStateChanged(int state) {
+
+        }
     }
 
-    private class ContentFragmentAdapter extends PagerAdapter {
+    private class MyOnCheckedChangeListener implements RadioGroup.OnCheckedChangeListener{
 
         @Override
-        public int getCount() {
-            return basePagers.size();
+        public void onCheckedChanged(RadioGroup radioGroup, int i) {
+            MainActivity mainActivity= (MainActivity) context;
+            switch (i){
+                case R.id.rb_home:
+                    //viewpager.setCurrentItem(0,false);
+                    viewpager.setCurrentItem(0);
+                    mainActivity.getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
+                    break;
+                case R.id.rb_newscenter:
+                    viewpager.setCurrentItem(1);
+                    mainActivity.getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+                    break;
+                case R.id.rb_smartservice:
+                    viewpager.setCurrentItem(2);
+                    mainActivity.getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
+                    break;
+                case R.id.rb_govaffair:
+                    viewpager.setCurrentItem(3);
+                    mainActivity.getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
+                    break;
+                case R.id.rb_setting:
+                    viewpager.setCurrentItem(4);
+                    mainActivity.getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
+                    break;
+            }
         }
-
-        @NonNull
-        @Override
-        public Object instantiateItem(@NonNull ViewGroup container, int position) {
-            BasePager basePager = basePagers.get(position);//各个页面的实例
-            View rootView = basePager.rootView;//各个子页面
-            //调用各个页面的initData()
-            basePager.initData();
-            container.addView(rootView);
-
-            return rootView;
-        }
-
-        @Override
-        public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
-            return view == object;
-        }
-
-        @Override
-        public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
-            container.removeView((View) object);
-        }
-
-
     }
 }

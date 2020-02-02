@@ -28,4 +28,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(':xutils')
     implementation project(':SlidingMenu_library')
+    implementation 'com.google.code.gson:gson:2.2.4'
 }

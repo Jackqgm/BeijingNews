@@ -15,6 +15,7 @@ public class MainActivity extends SlidingFragmentActivity {
 
     public static final String MAIN_CONTENT_TAG = "main_content_tag";
     public static final String LEFTMENU_TAG = "leftmenu_tag";
+    private FragmentManager fm;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -44,7 +45,7 @@ public class MainActivity extends SlidingFragmentActivity {
 
     private void initFragment() {
         //1.得到FragmentManager
-        FragmentManager fm = getSupportFragmentManager();
+        fm = getSupportFragmentManager();
         //2.开启事务
         FragmentTransaction ft = fm.beginTransaction();
         //3.替换
@@ -52,5 +53,13 @@ public class MainActivity extends SlidingFragmentActivity {
         ft.replace(R.id.fl_leftmenu, new LeftMenuFragment(), LEFTMENU_TAG);
         //4.提交
         ft.commit();
+    }
+
+    /*
+    * 得到左侧菜单
+    * */
+    public LeftMenuFragment getLeftMenuFragment() {
+        LeftMenuFragment leftMenuFragment = (LeftMenuFragment) fm.findFragmentByTag(LEFTMENU_TAG);
+        return leftMenuFragment;
     }
 }
