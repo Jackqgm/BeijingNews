@@ -74,6 +74,13 @@ public class ContentFragment extends BaseFragment {
         rg_main.check(R.id.rb_home);
         basePagers.get(0).initData();
     }
+
+    //得到新闻中心
+    public NewsCenterPager getNewsCenterPager() {
+
+        return (NewsCenterPager) basePagers.get(1);
+    }
+
     private class MyOnPageChangeListener implements ViewPager.OnPageChangeListener {
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
