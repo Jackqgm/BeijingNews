@@ -3,6 +3,7 @@ package com.atguigu.beijingnews.activity;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.view.Window;
 
 import com.atguigu.beijingnews.R;
 import com.atguigu.beijingnews.fragment.ContentFragment;
@@ -19,6 +20,7 @@ public class MainActivity extends SlidingFragmentActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        requestWindowFeature(Window.FEATURE_NO_TITLE);//设置成无标题
         super.onCreate(savedInstanceState);
         //设置主页面
         setContentView(R.layout.activity_main);

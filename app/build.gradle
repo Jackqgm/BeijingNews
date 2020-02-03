@@ -29,4 +29,5 @@ dependencies {
     implementation project(':xutils')
     implementation project(':SlidingMenu_library')
     implementation 'com.google.code.gson:gson:2.2.4'
+    implementation project(':ViewPagerIndicator_library')
 }

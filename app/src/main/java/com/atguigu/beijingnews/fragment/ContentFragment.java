@@ -73,6 +73,14 @@ public class ContentFragment extends BaseFragment {
         //设置默认选中状态
         rg_main.check(R.id.rb_home);
         basePagers.get(0).initData();
+
+        isEnableSlidingMenu(SlidingMenu.TOUCHMODE_NONE);
+    }
+
+    //根据传入的参数设置SlidingMenu是否可以滑动
+    private void isEnableSlidingMenu(int touchmodeNone) {
+        MainActivity mainActivity= (MainActivity) context;
+        mainActivity.getSlidingMenu().setTouchModeAbove(touchmodeNone);
     }
 
     //得到新闻中心

@@ -3,5 +3,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/fl_leftmenu"
-    android:background="@android:color/black">
+    android:background="@android:color/holo_orange_light">
 </FrameLayout>

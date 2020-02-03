@@ -20,16 +20,16 @@
         "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\drawable\\notification_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\SlidingMenu_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\SlidingMenu_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_notification_template_big_media_custom.xml.flat",
+        "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\129c8fac1c5f0067f8f99221d2e260a0\\res\\layout\\notification_template_big_media_custom.xml"
     },
     {
         "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\SlidingMenu_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_notification_template_big_media.xml.flat",
         "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\129c8fac1c5f0067f8f99221d2e260a0\\res\\layout\\notification_template_big_media.xml"
     },
     {
-        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\SlidingMenu_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_notification_template_big_media_custom.xml.flat",
-        "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\129c8fac1c5f0067f8f99221d2e260a0\\res\\layout\\notification_template_big_media_custom.xml"
+        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\SlidingMenu_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\SlidingMenu_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_slidingmenumain.xml.flat",
