@@ -1,23 +1,23 @@
 [
     {
-        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_vpi__tab_indicator.xml.flat",
-        "source": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\vpi__tab_indicator.xml"
-    },
-    {
         "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4_vpi__tab_selected_holo.9.png.flat",
         "source": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_library\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\vpi__tab_selected_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_vpi__tab_indicator.xml.flat",
+        "source": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\vpi__tab_indicator.xml"
     },
     {
         "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_notification_template_big_media_custom.xml.flat",
         "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\129c8fac1c5f0067f8f99221d2e260a0\\res\\layout\\notification_template_big_media_custom.xml"
     },
     {
-        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
-    },
-    {
         "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
     },
     {
         "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_notification_bg_low.xml.flat",
@@ -36,12 +36,12 @@
         "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\129c8fac1c5f0067f8f99221d2e260a0\\res\\layout\\notification_template_lines_media.xml"
     },
     {
-        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\color_vpi__light_theme.xml.flat",
-        "source": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_library\\build\\intermediates\\bundles\\debug\\res\\color\\vpi__light_theme.xml"
-    },
-    {
         "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_notification_tile_bg.xml.flat",
         "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\color_vpi__light_theme.xml.flat",
+        "source": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_library\\build\\intermediates\\bundles\\debug\\res\\color\\vpi__light_theme.xml"
     },
     {
         "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v16_notification_template_custom_big.xml.flat",
@@ -148,12 +148,12 @@
         "source": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_library\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\vpi__tab_unselected_focused_holo.9.png"
     },
     {
-        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4_vpi__tab_unselected_holo.9.png.flat",
-        "source": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_library\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\vpi__tab_unselected_holo.9.png"
-    },
-    {
         "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_vpi__tab_unselected_pressed_holo.9.png.flat",
         "source": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_library\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\vpi__tab_unselected_pressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4_vpi__tab_unselected_holo.9.png.flat",
+        "source": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_library\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\vpi__tab_unselected_holo.9.png"
     },
     {
         "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_notification_icon_background.xml.flat",
@@ -196,16 +196,16 @@
         "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\layout\\notification_action.xml"
     },
     {
-        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_notification_template_big_media.xml.flat",
-        "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\129c8fac1c5f0067f8f99221d2e260a0\\res\\layout\\notification_template_big_media.xml"
+        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_news_tab_item_bg_select.9.png.flat",
+        "source": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_library\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\news_tab_item_bg_select.9.png"
     },
     {
         "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_vpi__tab_selected_focused_holo.9.png.flat",
         "source": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_library\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\vpi__tab_selected_focused_holo.9.png"
     },
     {
-        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_news_tab_item_bg_select.9.png.flat",
-        "source": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_library\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\news_tab_item_bg_select.9.png"
+        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_notification_template_big_media.xml.flat",
+        "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\129c8fac1c5f0067f8f99221d2e260a0\\res\\layout\\notification_template_big_media.xml"
     },
     {
         "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21_notification_action_background.xml.flat",
@@ -232,12 +232,12 @@
         "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\layout-v21\\notification_action.xml"
     },
     {
-        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21_notification_action_tombstone.xml.flat",
-        "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\layout-v21\\notification_action_tombstone.xml"
-    },
-    {
         "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_vpi__tab_textcolor_indicator.xml.flat",
         "source": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\vpi__tab_textcolor_indicator.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21_notification_action_tombstone.xml.flat",
+        "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\layout-v21\\notification_action_tombstone.xml"
     },
     {
         "merged": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_vpi__tab_selected_pressed_holo.9.png.flat",
