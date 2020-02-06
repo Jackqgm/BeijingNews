@@ -504,6 +504,36 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-zh-rHK_values-zh-rHK.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "101",
+                        "endOffsets": "152"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-es-rUS_values-es-rUS.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\values-es-rUS\\values-es-rUS.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-ja_values-ja.arsc.flat",
             "map": [
                 {
@@ -531,36 +561,6 @@
                         "startOffsets": "255",
                         "endColumns": "100",
                         "endOffsets": "351"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-zh-rHK_values-zh-rHK.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\values-zh-rHK\\values-zh-rHK.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "101",
-                        "endOffsets": "152"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-es-rUS_values-es-rUS.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\values-es-rUS\\values-es-rUS.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
                     }
                 }
             ]
@@ -671,6 +671,21 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-mr_values-mr.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\values-mr\\values-mr.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-es_values-es.arsc.flat",
             "map": [
                 {
@@ -698,21 +713,6 @@
                         "startOffsets": "55,133,204",
                         "endColumns": "77,70,81",
                         "endOffsets": "128,199,281"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-mr_values-mr.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\values-mr\\values-mr.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
                     }
                 }
             ]
@@ -855,6 +855,21 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-sq_values-sq.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\values-sq\\values-sq.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-ko_values-ko.arsc.flat",
             "map": [
                 {
@@ -882,21 +897,6 @@
                         "startOffsets": "257",
                         "endColumns": "100",
                         "endOffsets": "353"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-sq_values-sq.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\values-sq\\values-sq.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
                     }
                 }
             ]
@@ -1054,6 +1054,21 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-en-rIN_values-en-rIN.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-pl_values-pl.arsc.flat",
             "map": [
                 {
@@ -1081,21 +1096,6 @@
                         "startOffsets": "289",
                         "endColumns": "100",
                         "endOffsets": "385"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-en-rIN_values-en-rIN.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
                     }
                 }
             ]
@@ -1236,6 +1236,21 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-vi_values-vi.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\values-vi\\values-vi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-pt-rBR_values-pt-rBR.arsc.flat",
             "map": [
                 {
@@ -1263,21 +1278,6 @@
                         "startOffsets": "55,131,204",
                         "endColumns": "75,72,80",
                         "endOffsets": "126,199,280"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-vi_values-vi.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\values-vi\\values-vi.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
                     }
                 }
             ]
@@ -1424,6 +1424,21 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-in_values-in.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\values-in\\values-in.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-iw_values-iw.arsc.flat",
             "map": [
                 {
@@ -1451,21 +1466,6 @@
                         "startOffsets": "261",
                         "endColumns": "102",
                         "endOffsets": "359"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-in_values-in.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\values-in\\values-in.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
                     }
                 }
             ]

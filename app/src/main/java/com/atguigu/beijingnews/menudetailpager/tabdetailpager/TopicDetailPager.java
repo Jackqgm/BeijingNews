@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +26,9 @@ import com.atguigu.refreshlistview_library.RefreshListView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.gson.Gson;
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
+import com.handmark.pulltorefresh.library.PullToRefreshListView;
+import com.handmark.pulltorefresh.library.extras.SoundPullEventListener;
 
 import org.xutils.common.Callback;
 import org.xutils.common.util.DensityUtil;
@@ -44,7 +48,7 @@ public class TopicDetailPager extends MenuDetailBasePager {
     private HorizontalScrollViewPager viewPager;
     private TextView tv_title;
     private LinearLayout ll_point_group;
-    private RefreshListView  listView;
+    private ListView listView;
     private ImageOptions imageOptions;
 
     private final NewsCenterPagerBean.DataBean.ChildrenBean childrenBean;
@@ -59,6 +63,7 @@ public class TopicDetailPager extends MenuDetailBasePager {
     //下一页的联网路径
     private String moreUrl;
     private Boolean isMoreLoad=false;
+    private PullToRefreshListView mPullRefreshListView;
 
     public TopicDetailPager(Context context, NewsCenterPagerBean.DataBean.ChildrenBean childrenBean) {
         super(context);
@@ -80,24 +85,53 @@ public class TopicDetailPager extends MenuDetailBasePager {
     public View initView() {
         //LogUtil.e("页签详情页面数据被初始化了");
         View view = View.inflate(context, R.layout.topic_detail_pager, null);
-        listView = (RefreshListView) view.findViewById(R.id.listview);
         //初始化控件
+        mPullRefreshListView = (PullToRefreshListView) view.findViewById(R.id.pull_refresh_list);
+        listView = mPullRefreshListView.getRefreshableView();
+
         View topNewsView = View.inflate(context, R.layout.topnews, null);
         viewPager = topNewsView.findViewById(R.id.viewpager);
         tv_title = topNewsView.findViewById(R.id.tv_title);
         ll_point_group = topNewsView.findViewById(R.id.ll_point_group);
 
         //把顶部轮播图部分的视图,以头Item方式添加到ListView中
-        //listView.addHeaderView(topNewsView);
-        listView.addTopNewsView(topNewsView);
+        listView.addHeaderView(topNewsView);
+        //listView.addTopNewsView(topNewsView);
 
         //设置下拉刷新监听
-        listView.setOnRefreshListener(new MyOnRefreshListener());
+        //listView.setOnRefreshListener(new MyOnRefreshListener());
+        mPullRefreshListView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ListView>() {
+            @Override
+            public void onPullDownToRefresh(PullToRefreshBase<ListView> refreshView) {
+                getDataFromNet();
+            }
+
+            @Override
+            public void onPullUpToRefresh(PullToRefreshBase<ListView> refreshView) {
+                if (TextUtils.isEmpty(moreUrl)) {
+                    Toast.makeText(context, "无法加载更多", Toast.LENGTH_SHORT).show();
+                    //刷新完成,恢复初始状态
+                    mPullRefreshListView.onRefreshComplete();
+                } else {
+                    Toast.makeText(context, "加载更多被回调了", Toast.LENGTH_SHORT).show();
+                    getMoreDataFromNet();
+                }
+            }
+        });
+
+        /**
+         * Add Sound Event Listener
+         */
+        SoundPullEventListener<ListView> soundListener = new SoundPullEventListener<ListView>(context);
+        soundListener.addSoundEvent(PullToRefreshBase.State.PULL_TO_REFRESH, R.raw.pull_event);
+        soundListener.addSoundEvent(PullToRefreshBase.State.RESET, R.raw.reset_sound);
+        soundListener.addSoundEvent(PullToRefreshBase.State.REFRESHING, R.raw.refreshing_sound);
+        mPullRefreshListView.setOnPullEventListener(soundListener);
 
         return view;
     }
 
-    private class MyOnRefreshListener implements RefreshListView.OnRefreshListener {
+    /*private class MyOnRefreshListener implements RefreshListView.OnRefreshListener {
         @Override
         public void onPullDownRefresh() {
             Toast.makeText(context, "下拉刷新被回调了", Toast.LENGTH_SHORT).show();
@@ -114,7 +148,7 @@ public class TopicDetailPager extends MenuDetailBasePager {
                 getMoreDataFromNet();
             }
         }
-    }
+    }*/
 
     private void getMoreDataFromNet() {
         RequestParams params = new RequestParams(moreUrl);
@@ -123,7 +157,7 @@ public class TopicDetailPager extends MenuDetailBasePager {
             @Override
             public void onSuccess(String result) {
                 LogUtil.e("加载更多联网成功==" + result);
-                listView.setOnRefreshFinish(false);
+                mPullRefreshListView.onRefreshComplete();
                 isMoreLoad = true;
                 //解析数据
                 processData(result);
@@ -133,7 +167,7 @@ public class TopicDetailPager extends MenuDetailBasePager {
             @Override
             public void onError(Throwable ex, boolean isOnCallback) {
                 LogUtil.e("加载更多联网失败==" + ex.getMessage());
-                listView.setOnRefreshFinish(false);
+                mPullRefreshListView.onRefreshComplete();
             }
 
             @Override
@@ -367,14 +401,14 @@ public class TopicDetailPager extends MenuDetailBasePager {
                 processData(result);
 
                 // 隐藏下拉刷新控件,更新时间,重新显示数据
-                listView.setOnRefreshFinish(true);
+                mPullRefreshListView.onRefreshComplete();
             }
 
             @Override
             public void onError(Throwable ex, boolean isOnCallback) {
                 LogUtil.e(childrenBean.getTitle() + "页面数据请求失败+++" + ex.getMessage());
                 //隐藏下拉刷新控件,不更新时间
-                listView.setOnRefreshFinish(true);
+                mPullRefreshListView.onRefreshComplete();
             }
 
             @Override
