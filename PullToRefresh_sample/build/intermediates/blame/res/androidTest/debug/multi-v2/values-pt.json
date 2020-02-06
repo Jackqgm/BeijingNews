@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_sample\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-pt\\values-pt.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\PullToRefresh_library\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,131,204",
+                        "endColumns": "75,72,83",
+                        "endOffsets": "126,199,283"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\53d4964c40fafed6d86695436ec8c9c8\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "288",
+                        "endColumns": "100",
+                        "endOffsets": "384"
+                    }
+                }
+            ]
+        }
+    ]
+}
