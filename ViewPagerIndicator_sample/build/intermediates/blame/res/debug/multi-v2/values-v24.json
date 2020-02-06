@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "C:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\ViewPagerIndicator_sample\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Jackqgm\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\129c8fac1c5f0067f8f99221d2e260a0\\res\\values-v24\\values-v24.xml",

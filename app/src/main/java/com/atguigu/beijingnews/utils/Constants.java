@@ -60,5 +60,8 @@ public class Constants {
     19.Alt + Left/Right 切换代码视图
 
    20. Ctrl + Enter在当前行的上一行插入新行，光标在行首时有效
+
+    21. 在Android Studio，使用Ctrl Shift +或-，就可以展开或收起全部代码。
+        Ctrl + 或 - 对当前方法展开或者收起。
       ————————————————*/
 }

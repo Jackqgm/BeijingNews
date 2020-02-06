@@ -12,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.atguigu.beijingnews.R;
 import com.atguigu.beijingnews.base.MenuDetailBasePager;
 import com.atguigu.beijingnews.domain.NewsCenterPagerBean;
@@ -21,17 +20,15 @@ import com.atguigu.beijingnews.utils.CacheUtils;
 import com.atguigu.beijingnews.utils.Constants;
 import com.atguigu.beijingnews.utils.LogUtil;
 import com.atguigu.beijingnews.view.HorizontalScrollViewPager;
-import com.atguigu.beijingnews.view.RefreshListView;
+import com.atguigu.refreshlistview_library.RefreshListView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.gson.Gson;
-
 import org.xutils.common.Callback;
 import org.xutils.common.util.DensityUtil;
 import org.xutils.http.RequestParams;
 import org.xutils.image.ImageOptions;
 import org.xutils.x;
-
 import java.util.List;
 
 /**
@@ -44,7 +41,7 @@ public class TabDetailPager extends MenuDetailBasePager {
     private HorizontalScrollViewPager viewPager;
     private TextView tv_title;
     private LinearLayout ll_point_group;
-    private RefreshListView listView;
+    private RefreshListView  listView;
     private ImageOptions imageOptions;
 
     private final NewsCenterPagerBean.DataBean.ChildrenBean childrenBean;
@@ -118,7 +115,7 @@ public class TabDetailPager extends MenuDetailBasePager {
 
     private void getMoreDataFromNet() {
         RequestParams params = new RequestParams(moreUrl);
-        params.setConnectTimeout(5000);
+        params.setConnectTimeout(3000);
         x.http().get(params, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
@@ -355,7 +352,7 @@ public class TabDetailPager extends MenuDetailBasePager {
     private void getDataFromNet() {
 
         RequestParams params = new RequestParams(url);
-        params.setConnectTimeout(5000);
+        params.setConnectTimeout(4000);
         x.http().get(params, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {

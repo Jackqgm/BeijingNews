@@ -31,5 +31,6 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.2.4'
     implementation project(':ViewPagerIndicator_library')
     implementation files('libs/glide-3.7.0.jar')
+    implementation project(':refreshlistview_library')
 }
 
