@@ -43,7 +43,7 @@ public class NewsDetailActivity extends Activity implements View.OnClickListener
 
     private void getData() {
         url = getIntent().getStringExtra("url");
-        webview.loadUrl(url);
+
         //支持JS
         webSettings = webview.getSettings();
         webSettings.setJavaScriptEnabled(true);
@@ -63,6 +63,7 @@ public class NewsDetailActivity extends Activity implements View.OnClickListener
                 pbLoading.setVisibility(View.GONE);
             }
         });
+        webview.loadUrl(url);
     }
 
     private void findViews() {

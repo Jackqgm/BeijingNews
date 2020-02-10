@@ -3,10 +3,13 @@ package com.atguigu.beijingnews.menudetailpager.tabdetailpager;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.text.TextUtils;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -63,6 +66,7 @@ public class TabDetailPager extends MenuDetailBasePager {
     //下一页的联网路径
     private String moreUrl;
     private Boolean isMoreLoad = false;
+    private InternalHandler internalHandler;
 
     public TabDetailPager(Context context, NewsCenterPagerBean.DataBean.ChildrenBean childrenBean) {
         super(context);
@@ -111,7 +115,7 @@ public class TabDetailPager extends MenuDetailBasePager {
             int realPosition = i - 1;
             TabDetailpagerBean.DataBean.NewsBean newsData = news.get(realPosition);
             //Toast.makeText(context, "Id==" + newsData.getId() + "////Title===" + newsData.getTitle(), Toast.LENGTH_SHORT).show();
-            LogUtil.e("Id==" + newsData.getId() + "////Title===" + newsData.getTitle()+", url//"+newsData.getUrl());
+            LogUtil.e("Id==" + newsData.getId() + "////Title===" + newsData.getTitle() + ", url//" + newsData.getUrl());
             //取出保存的Id集合
             String idArray = CacheUtils.getString(context, REAL_ARRAY_ID);
 
@@ -124,7 +128,7 @@ public class TabDetailPager extends MenuDetailBasePager {
             }
             // 点击ListViewd的Items跳转的新闻浏览页面
             Intent intent = new Intent(context, NewsDetailActivity.class);
-            intent.putExtra("url", Constants.BASE_URL+newsData.getUrl());
+            intent.putExtra("url", Constants.BASE_URL + newsData.getUrl());
             context.startActivity(intent);
         }
     }
@@ -259,8 +263,33 @@ public class TabDetailPager extends MenuDetailBasePager {
             //刷新适配器
             adapter.notifyDataSetChanged();
         }
+
+        //设置顶部轮播图滚动播放,每隔4秒切换一次view pager页面
+        if (internalHandler == null) {
+            internalHandler = new InternalHandler();
+        }
+        //把消息队列所有的消息和回调移除
+        internalHandler.removeCallbacksAndMessages(null);
+        internalHandler.postDelayed(new MyRunnable(), 4000);
     }
 
+    class InternalHandler extends Handler {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            //切换viewpager的下一个页面
+            int item = (viewPager.getCurrentItem() + 1) % topnews.size();
+            viewPager.setCurrentItem(item);
+            internalHandler.postDelayed(new MyRunnable(), 4000);
+        }
+    }
+
+    private class MyRunnable implements Runnable {
+        @Override
+        public void run() {
+            internalHandler.sendEmptyMessage(0);
+        }
+    }
 
     private class TabDetailPagerListAdapter extends BaseAdapter {
 
@@ -311,11 +340,11 @@ public class TabDetailPager extends MenuDetailBasePager {
             viewHolder.tv_title.setText(newsBean.getTitle());
             viewHolder.tv_time.setText(newsBean.getPubdate());
 
-            String idArray=CacheUtils.getString(context, REAL_ARRAY_ID);
-            if (idArray.contains(newsBean.getId()+"")){
+            String idArray = CacheUtils.getString(context, REAL_ARRAY_ID);
+            if (idArray.contains(newsBean.getId() + "")) {
                 //设置灰色
                 viewHolder.tv_title.setTextColor(Color.GRAY);
-            }else{
+            } else {
                 //设置黑色
                 viewHolder.tv_title.setTextColor(Color.BLACK);
             }
@@ -348,9 +377,22 @@ public class TabDetailPager extends MenuDetailBasePager {
             prePosition = position;
         }
 
+        private boolean isDragging = false;
+
         @Override
         public void onPageScrollStateChanged(int state) {
-
+            if (state == ViewPager.SCROLL_STATE_DRAGGING) {//拖拽
+                isDragging = true;
+                internalHandler.removeCallbacksAndMessages(null);
+            } else if (state == ViewPager.SCROLL_STATE_SETTLING && isDragging) {//惯性
+                isDragging = false;
+                internalHandler.removeCallbacksAndMessages(null);
+                internalHandler.postDelayed(new MyRunnable(), 4000);
+            } else if (state == ViewPager.SCROLL_STATE_IDLE && isDragging) {//静止
+                isDragging = false;
+                internalHandler.removeCallbacksAndMessages(null);
+                internalHandler.postDelayed(new MyRunnable(), 4000);
+            }
         }
     }
 
@@ -378,6 +420,30 @@ public class TabDetailPager extends MenuDetailBasePager {
             String imageUrl = Constants.BASE_URL + topnewsBean.getTopimage();
             //x.image().bind(imageView, imageUrl, imageOptions);
             x.image().bind(imageView, imageUrl);
+
+            imageView.setOnTouchListener(new View.OnTouchListener() {
+                @Override
+                public boolean onTouch(View view, MotionEvent motionEvent) {
+                    switch (motionEvent.getAction()) {
+                        case MotionEvent.ACTION_DOWN://按住
+                            internalHandler.removeCallbacksAndMessages(null);
+                            break;
+
+                        case MotionEvent.ACTION_UP://松开
+                            internalHandler.removeCallbacksAndMessages(null);
+                            internalHandler.postDelayed(new MyRunnable(), 4000);
+                            break;
+
+                        /*case MotionEvent.ACTION_CANCEL://取消
+                            internalHandler.removeCallbacksAndMessages(null);
+                            internalHandler.postDelayed(new MyRunnable(), 4000);
+                            break;*/
+                    }
+
+                    return true;
+                }
+            });
+
             return imageView;
         }
 
@@ -429,4 +495,6 @@ public class TabDetailPager extends MenuDetailBasePager {
             }
         });
     }
+
+
 }

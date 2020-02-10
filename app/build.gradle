@@ -33,6 +33,7 @@ dependencies {
     implementation files('libs/glide-3.7.0.jar')
     implementation project(':refreshlistview_library')
     implementation project(':PullToRefresh_library')
+    implementation files('libs/volley.jar')
 }
 
 

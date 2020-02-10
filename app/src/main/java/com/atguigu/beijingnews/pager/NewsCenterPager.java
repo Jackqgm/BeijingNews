@@ -2,11 +2,20 @@ package com.atguigu.beijingnews.pager;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.os.SystemClock;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.android.volley.NetworkResponse;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.HttpHeaderParser;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.atguigu.beijingnews.activity.MainActivity;
 import com.atguigu.beijingnews.base.BasePager;
 import com.atguigu.beijingnews.base.MenuDetailBasePager;
@@ -19,14 +28,17 @@ import com.atguigu.beijingnews.menudetailpager.TopicMenuDetailPager;
 import com.atguigu.beijingnews.utils.CacheUtils;
 import com.atguigu.beijingnews.utils.Constants;
 import com.atguigu.beijingnews.utils.LogUtil;
+import com.atguigu.beijingnews.volley.VolleyManager;
 import com.google.gson.Gson;
 
 import org.xutils.common.Callback;
 import org.xutils.http.RequestParams;
 import org.xutils.x;
 
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * Created by Jackqgm on 2020/2/1.
@@ -38,6 +50,8 @@ public class NewsCenterPager extends BasePager {
     private List<NewsCenterPagerBean.DataBean> data;
     //详情页面的集合
     private ArrayList<MenuDetailBasePager> detailBasePagers;
+    //起始时间
+    private long startTime;
 
     public NewsCenterPager(Context context) {
         super(context);
@@ -75,8 +89,56 @@ public class NewsCenterPager extends BasePager {
             processData(saveJson);
         }
 
+        startTime= SystemClock.uptimeMillis();
         //调用联网请求数据的方法
-        getDataFromNet();
+        //getDataFromNet();
+        getDataFromNetByVolley();
+    }
+
+    /*
+    * 使用Volley联网请求
+    * */
+    private void getDataFromNetByVolley() {
+        //请求队列
+        //RequestQueue queue= Volley.newRequestQueue(context);
+        StringRequest request=new StringRequest(Request.Method.GET, Constants.NEWSCENTER_PAGER_URL, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String s) {
+                //结束时间
+                long endTime=SystemClock.uptimeMillis();
+
+                long passTime=endTime-startTime;
+
+                LogUtil.e("passTime>>>>>>>$$$$$$$$$$$$$$$$$$$$$:"+passTime);
+
+                LogUtil.e("使用Volley联网请求成功==" + s);
+                //缓存数据
+                CacheUtils.putString(context, Constants.NEWSCENTER_PAGER_URL, s);
+
+                processData(s);
+                //设置适配器
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                LogUtil.e("使用Volley联网请求失败==" + volleyError);
+            }
+        }){
+            @Override
+            protected Response<String> parseNetworkResponse(NetworkResponse response) {
+                String parsed;
+                try {
+                    parsed = new String(response.data, "utf-8");
+                    return Response.success(parsed, HttpHeaderParser.parseCacheHeaders(response));
+                } catch (UnsupportedEncodingException var4) {
+                    parsed = new String(response.data);
+                }
+                return super.parseNetworkResponse(response);
+            }
+        };
+        //添加队列
+        VolleyManager.getRequestQueue().add(request);
     }
 
     /*

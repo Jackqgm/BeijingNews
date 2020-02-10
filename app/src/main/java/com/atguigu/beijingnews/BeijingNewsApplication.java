@@ -2,6 +2,8 @@ package com.atguigu.beijingnews;
 
 import android.app.Application;
 
+import com.atguigu.beijingnews.volley.VolleyManager;
+
 import org.xutils.x;
 
 /**
@@ -17,5 +19,7 @@ public class BeijingNewsApplication extends Application {
         super.onCreate();
         x.Ext.setDebug(true);
         x.Ext.init(this);
+
+        VolleyManager.init(this);
     }
 }
