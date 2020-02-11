@@ -460,7 +460,7 @@ public class TabDetailPager extends MenuDetailBasePager {
     }
 
     private void getDataFromNet() {
-
+        prePosition=0;
         RequestParams params = new RequestParams(url);
         params.setConnectTimeout(4000);
         x.http().get(params, new Callback.CommonCallback<String>() {

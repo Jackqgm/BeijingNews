@@ -10,12 +10,10 @@ import android.widget.TextView;
 
 import com.android.volley.NetworkResponse;
 import com.android.volley.Request;
-import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.atguigu.beijingnews.activity.MainActivity;
 import com.atguigu.beijingnews.base.BasePager;
 import com.atguigu.beijingnews.base.MenuDetailBasePager;
@@ -38,7 +36,6 @@ import org.xutils.x;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Queue;
 
 /**
  * Created by Jackqgm on 2020/2/1.
@@ -85,11 +82,11 @@ public class NewsCenterPager extends BasePager {
 
         //获取缓存数据
         String saveJson = CacheUtils.getString(context, Constants.NEWSCENTER_PAGER_URL);
-        if (!TextUtils.isEmpty(saveJson)){
+        if (!TextUtils.isEmpty(saveJson)) {
             processData(saveJson);
         }
 
-        startTime= SystemClock.uptimeMillis();
+        startTime = SystemClock.uptimeMillis();
         //调用联网请求数据的方法
         //getDataFromNet();
         getDataFromNetByVolley();
@@ -101,15 +98,15 @@ public class NewsCenterPager extends BasePager {
     private void getDataFromNetByVolley() {
         //请求队列
         //RequestQueue queue= Volley.newRequestQueue(context);
-        StringRequest request=new StringRequest(Request.Method.GET, Constants.NEWSCENTER_PAGER_URL, new Response.Listener<String>() {
+        StringRequest request = new StringRequest(Request.Method.GET, Constants.NEWSCENTER_PAGER_URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String s) {
                 //结束时间
-                long endTime=SystemClock.uptimeMillis();
+                long endTime = SystemClock.uptimeMillis();
 
-                long passTime=endTime-startTime;
+                long passTime = endTime - startTime;
 
-                LogUtil.e("passTime>>>>>>>$$$$$$$$$$$$$$$$$$$$$:"+passTime);
+                LogUtil.e("passTime>>>>>>>$$$$$$$$$$$$$$$$$$$$$:" + passTime);
 
                 LogUtil.e("使用Volley联网请求成功==" + s);
                 //缓存数据
@@ -124,7 +121,7 @@ public class NewsCenterPager extends BasePager {
             public void onErrorResponse(VolleyError volleyError) {
                 LogUtil.e("使用Volley联网请求失败==" + volleyError);
             }
-        }){
+        }) {
             @Override
             protected Response<String> parseNetworkResponse(NetworkResponse response) {
                 String parsed;
@@ -194,7 +191,7 @@ public class NewsCenterPager extends BasePager {
         detailBasePagers = new ArrayList<>();
         detailBasePagers.add(new NewsMenuDetailPager(context, data.get(0)));
         detailBasePagers.add(new TopicMenuDetailPager(context, data.get(0)));
-        detailBasePagers.add(new PhotosMenuDetailPager(context));
+        detailBasePagers.add(new PhotosMenuDetailPager(context, data.get(2)));
         detailBasePagers.add(new InteractDetailPager(context));
 
         //把数据传递给左侧菜单
@@ -226,5 +223,22 @@ public class NewsCenterPager extends BasePager {
         menuDetailBasePager.initData();
 
         fl_content.addView(rootView);
+
+        if (i == 2) {
+            //组图详情页面可见
+            ib_switch_grid.setVisibility(View.VISIBLE);
+            ib_switch_grid.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //得到组图详情页面对象
+                    PhotosMenuDetailPager detailPager = (PhotosMenuDetailPager) detailBasePagers.get(2);
+                    //调用对象切换listview和gridview
+                    detailPager.switchListAndGrid(ib_switch_grid);
+                }
+            });
+        } else {
+            //其他页面不可见
+            ib_switch_grid.setVisibility(View.GONE);
+        }
     }
 }

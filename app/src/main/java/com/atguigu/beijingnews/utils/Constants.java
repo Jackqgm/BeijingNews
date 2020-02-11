@@ -9,11 +9,11 @@ public class Constants {
     /*
     * 联网请求IP和端口
     * */
-    //public static final String BASE_URL="http://192.168.1.18:8080/web_home";
+    //public static final String BASE_URL="http://192.168.1.6:8080/web_home";
     public static final String BASE_URL="http://192.168.43.144:8080/web_home";
     //本机模拟器访问本机Tomcat服务器
     //public static final String BASE_URL="http://10.0.2.2:8080/web_home";
-
+    //http://192.168.43.144:8080/web_home/static/api/news/categories.json
     /*
     * 新闻中心的网络地址
     * */

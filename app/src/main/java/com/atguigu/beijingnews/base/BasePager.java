@@ -24,6 +24,7 @@ public class BasePager {
 
     //加载子页面的
     public FrameLayout fl_content;
+    public ImageButton ib_switch_grid;
 
     public BasePager(Context context){
         this.context=context;
@@ -35,6 +36,10 @@ public class BasePager {
         tv_title = view.findViewById(R.id.tv_title);
         ib_menu = view.findViewById(R.id.ib_menu);
         fl_content = view.findViewById(R.id.fl_content);
+
+        ib_switch_grid = view.findViewById(R.id.ib_switch_grid);
+
+
         return view;
     }
 
