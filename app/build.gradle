@@ -35,6 +35,8 @@ dependencies {
     implementation project(':PullToRefresh_library')
     implementation files('libs/volley.jar')
     implementation project(':SlidingMenu_library')
+    implementation files('libs/jcore-android-2.1.6.jar')
+    implementation files('libs/jpush-android-3.3.8.jar')
 }
 
 
