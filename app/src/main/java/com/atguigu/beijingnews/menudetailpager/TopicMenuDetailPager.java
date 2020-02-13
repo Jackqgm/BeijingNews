@@ -3,11 +3,13 @@ package com.atguigu.beijingnews.menudetailpager;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+
 import com.atguigu.beijingnews.R;
 import com.atguigu.beijingnews.activity.MainActivity;
 import com.atguigu.beijingnews.base.MenuDetailBasePager;
@@ -15,9 +17,10 @@ import com.atguigu.beijingnews.domain.NewsCenterPagerBean;
 import com.atguigu.beijingnews.menudetailpager.tabdetailpager.TopicDetailPager;
 import com.atguigu.beijingnews.utils.LogUtil;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
-import com.viewpagerindicator.TabPageIndicator;
+
 import org.xutils.view.annotation.ViewInject;
 import org.xutils.x;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,8 +34,8 @@ public class TopicMenuDetailPager extends MenuDetailBasePager {
     @ViewInject(R.id.viewpager)
     private ViewPager viewPager;
 
-    @ViewInject(R.id.tabPageIndicator)
-    private TabPageIndicator tabPageIndicator;
+    @ViewInject(R.id.tabLayout)
+    private TabLayout tabLayout;
 
     @ViewInject(R.id.ib_tab_next)
     private ImageButton ib_tab_next;
@@ -77,12 +80,36 @@ public class TopicMenuDetailPager extends MenuDetailBasePager {
         viewPager.setAdapter(new TopicMenuDetailPager.MyMenuDetailPagerAdapter());
 
         //ViewPager和TabPageIndicator关联
-        tabPageIndicator.setViewPager(viewPager);
+        //tabLayout.setViewPager(viewPager);
+        tabLayout.setupWithViewPager(viewPager);
 
         //以后就用TabPageIndicator监听页面的变化
-        tabPageIndicator.setOnPageChangeListener(new TopicMenuDetailPager.MyOnPageChangeListener());
+       //tabLayout.setOnPageChangeListener(new TopicMenuDetailPager.MyOnPageChangeListener());
+        viewPager.addOnPageChangeListener(new MyOnPageChangeListener());
 
+        //设置滑动或固定
+        //tabLayout.setTabMode(TabLayout.MODE_FIXED);
+        tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
+        //tabLayout.setTabTextColors(Color.BLACK, Color.RED);
+        //tabLayout.setSelectedTabIndicatorColor(Color.RED);
+
+        /*for (int i = 0; i <tabLayout.getTabCount() ; i++) {
+            TabLayout.Tab tab = tabLayout.getTabAt(i);
+            tab.setCustomView(getTabView(i));
+        }*/
     }
+
+    /*private View getTabView(int position) {
+        //View view = View.inflate(context, R.layout.item_tab, null);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_tab, null);
+        TextView tv = view.findViewById(R.id.textview);
+        tv.setText(children.get(position).getTitle());
+
+        ImageView img = view.findViewById(R.id.imageview);
+        img.setImageResource(R.drawable.title_red_bg);
+
+        return view;
+    }*/
 
     private class MyOnPageChangeListener implements ViewPager.OnPageChangeListener {
 

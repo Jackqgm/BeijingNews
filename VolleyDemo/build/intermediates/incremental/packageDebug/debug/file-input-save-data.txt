@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Mon Feb 10 13:08:58 CST 2020
-0.baseType=DIRECTORY
-0.base=C\:\\Users\\Jackqgm\\AndroidStudioProjects\\BeijingNews\\BeijingNews\\VolleyDemo\\build\\intermediates\\transforms\\dexMerger\\debug\\19
-0.path=classes.dex
-0.set=DEX
-count=1

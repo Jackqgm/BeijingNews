@@ -6,10 +6,13 @@ INJECTED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\Vie
 INJECTED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:2:1-298:12
 MERGED from [:ViewPagerIndicator_library] C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\ViewPagerIndicator_library\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\0290c7377ab5d383e2edf0fbc79915ce\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\c8b5e67a402e1d2ada2d1874d6425511\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\129c8fac1c5f0067f8f99221d2e260a0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\b02203c2ef0de210cbef979591395918\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\e4eab272329280140a8104ddd4224beb\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\9d7db689dbe62862a93adc947ca37b21\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\0f9f0ae777f56256077f85aec7849304\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\167dfc12dd49fc71b76aeebf19aeb0ce\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\53d4964c40fafed6d86695436ec8c9c8\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\5defbaf9746557e3931b6002273c450c\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\6440d448e9a9b329065ce56a0912f733\AndroidManifest.xml:17:1-22:12
@@ -40,14 +43,20 @@ MERGED from [:ViewPagerIndicator_library] C:\Users\Jackqgm\AndroidStudioProjects
 MERGED from [:ViewPagerIndicator_library] C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\ViewPagerIndicator_library\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\0290c7377ab5d383e2edf0fbc79915ce\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\0290c7377ab5d383e2edf0fbc79915ce\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\c8b5e67a402e1d2ada2d1874d6425511\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\c8b5e67a402e1d2ada2d1874d6425511\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\129c8fac1c5f0067f8f99221d2e260a0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\129c8fac1c5f0067f8f99221d2e260a0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\b02203c2ef0de210cbef979591395918\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\b02203c2ef0de210cbef979591395918\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\e4eab272329280140a8104ddd4224beb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\e4eab272329280140a8104ddd4224beb\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\9d7db689dbe62862a93adc947ca37b21\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\9d7db689dbe62862a93adc947ca37b21\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\0f9f0ae777f56256077f85aec7849304\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\0f9f0ae777f56256077f85aec7849304\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\167dfc12dd49fc71b76aeebf19aeb0ce\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\167dfc12dd49fc71b76aeebf19aeb0ce\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\53d4964c40fafed6d86695436ec8c9c8\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\53d4964c40fafed6d86695436ec8c9c8\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\5defbaf9746557e3931b6002273c450c\AndroidManifest.xml:20:5-44

@@ -192,7 +192,7 @@ public class NewsCenterPager extends BasePager {
         detailBasePagers.add(new NewsMenuDetailPager(context, data.get(0)));
         detailBasePagers.add(new TopicMenuDetailPager(context, data.get(0)));
         detailBasePagers.add(new PhotosMenuDetailPager(context, data.get(2)));
-        detailBasePagers.add(new InteractDetailPager(context));
+        detailBasePagers.add(new InteractDetailPager(context, data.get(2)));
 
         //把数据传递给左侧菜单
         leftMenuFragment.setData(data);
