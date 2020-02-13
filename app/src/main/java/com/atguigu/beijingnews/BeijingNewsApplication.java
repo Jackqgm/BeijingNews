@@ -21,5 +21,6 @@ public class BeijingNewsApplication extends Application {
         x.Ext.init(this);
 
         VolleyManager.init(this);
+
     }
 }
