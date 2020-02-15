@@ -1,10 +1,12 @@
 package com.atguigu.beijingnews.menudetailpager;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.SystemClock;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageButton;
@@ -20,6 +22,7 @@ import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.StringRequest;
 import com.atguigu.beijingnews.R;
+import com.atguigu.beijingnews.activity.ShowImageActivity;
 import com.atguigu.beijingnews.base.MenuDetailBasePager;
 import com.atguigu.beijingnews.domain.NewsCenterPagerBean;
 import com.atguigu.beijingnews.domain.PhotosMenuDetailPagerBean;
@@ -63,7 +66,26 @@ public class PhotosMenuDetailPager extends MenuDetailBasePager {
         //2.联网请求,得到数据,创建视图
         View view = View.inflate(context, R.layout.photo_menudetail_pager, null);
         x.view().inject(this, view);
+
+        //设置Item点击事件
+        listview.setOnItemClickListener(new MyOnItemClickListener());
+        gridview.setOnItemClickListener(new MyOnItemClickListener());
+
         return view;
+    }
+
+    //实现图片缩放的点击监听
+    private class MyOnItemClickListener implements AdapterView.OnItemClickListener {
+
+        @Override
+        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            PhotosMenuDetailPagerBean.DataBean.NewsBean newsBean = news.get(i);
+            String imageUrl = Constants.BASE_URL + newsBean.getLargeimage();
+
+            Intent intent = new Intent(context, ShowImageActivity.class);
+            intent.putExtra("url", imageUrl);
+            context.startActivity(intent);
+        }
     }
 
     @Override

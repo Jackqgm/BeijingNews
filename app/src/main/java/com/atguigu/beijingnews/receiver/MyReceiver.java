@@ -52,13 +52,14 @@ public class MyReceiver extends BroadcastReceiver {
 
 				String url="https://www.baidu.com/";
 				JSONObject json = new JSONObject(bundle.getString(JPushInterface.EXTRA_EXTRA));
-				url=json.optString("url");
-				LogUtil.e("推送的========="+url);
+				url = json.optString("url");
+				LogUtil.e("推送的url==========="+url);
 
 				//打开自定义的Activity
 				Intent i = new Intent(context, NewsDetailActivity.class);
 				i.putExtras(bundle);
 				i.putExtra("url", url);
+
 				//i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP );
 				context.startActivity(i);
@@ -113,8 +114,8 @@ public class MyReceiver extends BroadcastReceiver {
 		return sb.toString();
 	}
 	
-	//send msg to MainActivity
-	/*private void processCustomMessage(Context context, Bundle bundle) {
+	/*//send msg to MainActivity
+	private void processCustomMessage(Context context, Bundle bundle) {
 		if (MainActivity.isForeground) {
 			String message = bundle.getString(JPushInterface.EXTRA_MESSAGE);
 			String extras = bundle.getString(JPushInterface.EXTRA_EXTRA);

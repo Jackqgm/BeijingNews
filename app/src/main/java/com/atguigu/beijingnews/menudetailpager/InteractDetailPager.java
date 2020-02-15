@@ -32,6 +32,8 @@ import com.atguigu.beijingnews.utils.Constants;
 import com.atguigu.beijingnews.utils.LogUtil;
 import com.atguigu.beijingnews.utils.NetCacheUtils;
 import com.atguigu.beijingnews.volley.VolleyManager;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.gson.Gson;
 
 import org.xutils.view.annotation.ViewInject;
@@ -233,11 +235,42 @@ public class InteractDetailPager extends MenuDetailBasePager {
             //loaderImager(viewHolder, imageUrl);
 
             //使用自定义的图片三级缓存工具类请求图片
-            viewHolder.iv_icon.setTag(position);
+           /* viewHolder.iv_icon.setTag(position);
             Bitmap bitmap = bitmapCacheUtils.getBitmap(imageUrl, position);//本地或内存
             if (bitmap != null) {
                 viewHolder.iv_icon.setImageBitmap(bitmap);
-            }
+            }*/
+
+            // 使用Picasso请求图片
+            /*Picasso.with(context)
+                    .load(imageUrl)
+                    .placeholder(R.drawable.home_scroll_default)
+                    .error(R.drawable.home_scroll_default)
+                    .into(viewHolder.iv_icon);*/
+
+            // 使用Glide请求图片
+            Glide.with(context)
+                    .load(imageUrl)
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                    .placeholder(R.drawable.home_scroll_default)
+                    .error(R.drawable.home_scroll_default)
+                    .into(viewHolder.iv_icon);
+
+            //使用ImageLoader加载图片
+            /*DisplayImageOptions options = new DisplayImageOptions.Builder()
+                    .showImageOnLoading(R.drawable.ic_stub)
+                    .showImageForEmptyUri(R.drawable.ic_empty)
+                    .showImageOnFail(R.drawable.ic_error)
+                    .cacheInMemory(true)
+                    .cacheOnDisk(true)
+                    .considerExifParams(true)
+                    .bitmapConfig(Bitmap.Config.RGB_565)
+                    .displayer(new RoundedBitmapDisplayer(10))
+                    .build();
+            com.nostra13.universalimageloader.core.ImageLoader
+                    .getInstance().displayImage(imageUrl, viewHolder.iv_icon, options);*/
+
+
             return convertView;
             //13040651853
         }

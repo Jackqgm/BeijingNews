@@ -5,7 +5,11 @@
       <module fileurl="file://$PROJECT_DIR$/AndroidAndH5/AndroidAndH5.iml" filepath="$PROJECT_DIR$/AndroidAndH5/AndroidAndH5.iml" />
       <module fileurl="file://$PROJECT_DIR$/AndroidAndJs/AndroidAndJs.iml" filepath="$PROJECT_DIR$/AndroidAndJs/AndroidAndJs.iml" />
       <module fileurl="file://$PROJECT_DIR$/BeijingNews.iml" filepath="$PROJECT_DIR$/BeijingNews.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Image-Loader-library/Image-Loader-library.iml" filepath="$PROJECT_DIR$/Image-Loader-library/Image-Loader-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Image-Loader-sample/Image-Loader-sample.iml" filepath="$PROJECT_DIR$/Image-Loader-sample/Image-Loader-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/JPushExample/JPushExample.iml" filepath="$PROJECT_DIR$/JPushExample/JPushExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhotoView-library/PhotoView-library.iml" filepath="$PROJECT_DIR$/PhotoView-library/PhotoView-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhotoView-sample/PhotoView-sample.iml" filepath="$PROJECT_DIR$/PhotoView-sample/PhotoView-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/PullToRefresh_library/PullToRefresh_library.iml" filepath="$PROJECT_DIR$/PullToRefresh_library/PullToRefresh_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/PullToRefresh_sample/PullToRefresh_sample.iml" filepath="$PROJECT_DIR$/PullToRefresh_sample/PullToRefresh_sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/SlidingMenu_library/SlidingMenu_library.iml" filepath="$PROJECT_DIR$/SlidingMenu_library/SlidingMenu_library.iml" />
@@ -13,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/ViewPagerIndicator_sample/ViewPagerIndicator_sample.iml" filepath="$PROJECT_DIR$/ViewPagerIndicator_sample/ViewPagerIndicator_sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/VolleyDemo/VolleyDemo.iml" filepath="$PROJECT_DIR$/VolleyDemo/VolleyDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\PhotoView-library\library.iml" filepath="C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\PhotoView-library\library.iml" />
       <module fileurl="file://C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\PullToRefresh_library\library.iml" filepath="C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\PullToRefresh_library\library.iml" />
       <module fileurl="file://$PROJECT_DIR$/pullToRefreshListFragment/pullToRefreshListFragment.iml" filepath="$PROJECT_DIR$/pullToRefreshListFragment/pullToRefreshListFragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/pullToRefreshViewPager/pullToRefreshViewPager.iml" filepath="$PROJECT_DIR$/pullToRefreshViewPager/pullToRefreshViewPager.iml" />

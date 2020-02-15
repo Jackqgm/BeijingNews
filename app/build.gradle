@@ -37,6 +37,9 @@ dependencies {
     implementation project(':SlidingMenu_library')
     implementation files('libs/jcore-android-2.1.6.jar')
     implementation files('libs/jpush-android-3.3.8.jar')
+    implementation files('libs/picasso-2.5.2.jar')
+    implementation project(':Image-Loader-library')
+    implementation project(':PhotoView-library')
 }
 
 

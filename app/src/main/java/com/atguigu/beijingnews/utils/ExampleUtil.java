@@ -72,7 +72,7 @@ public class ExampleUtil {
         }
         return appKey;
     }
-
+    
     // 取得版本号
     public static String GetVersion(Context context) {
 		try {
@@ -87,7 +87,7 @@ public class ExampleUtil {
     public static void showToast(final String toast, final Context context)
     {
     	new Thread(new Runnable() {
-
+			
 			@Override
 			public void run() {
 				Looper.prepare();
@@ -96,13 +96,13 @@ public class ExampleUtil {
 			}
 		}).start();
     }
-
+    
     public static boolean isConnected(Context context) {
         ConnectivityManager conn = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo info = conn.getActiveNetworkInfo();
         return (info != null && info.isConnected());
     }
-
+    
 	public static String getImei(Context context, String imei) {
         String ret = null;
 		try {
