@@ -2,9 +2,7 @@ package com.atguigu.beijingnews.activity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebSettings;
@@ -16,6 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.atguigu.beijingnews.R;
+
+import cn.sharesdk.onekeyshare.OnekeyShare;
 
 
 public class NewsDetailActivity extends Activity implements View.OnClickListener {
@@ -96,7 +96,24 @@ public class NewsDetailActivity extends Activity implements View.OnClickListener
         } else if (v == ibShare) {
             // Handle clicks for ibShare
             Toast.makeText(this, "设置分享链接", Toast.LENGTH_SHORT).show();
+            showShare();
         }
+    }
+    //java
+    private void showShare() {
+        OnekeyShare oks = new OnekeyShare();
+        // title标题，微信、QQ和QQ空间等平台使用
+        oks.setTitle(getString(R.string.app_name));
+        // titleUrl QQ和QQ空间跳转链接
+        oks.setTitleUrl("http://sharesdk.cn");
+        // text是分享文本，所有平台都需要这个字段
+        oks.setText("我是分享文本");
+        // imagePath是图片的本地路径，确保SDcard下面存在此张图片
+        oks.setImagePath("/sdcard/test.jpg");
+        // url在微信、Facebook等平台中使用
+        oks.setUrl("http://sharesdk.cn");
+        // 启动分享GUI
+        oks.show(this);
     }
 
     private int tempSize = 2;

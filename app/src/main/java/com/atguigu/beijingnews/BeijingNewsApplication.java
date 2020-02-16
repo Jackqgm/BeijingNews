@@ -28,8 +28,11 @@ public class BeijingNewsApplication extends Application {
         x.Ext.init(this);
 
         VolleyManager.init(this);
-        JPushInterface.setDebugMode(true); 	// 设置开启日志,发布时请关闭日志
-        JPushInterface.init(this);     		// 初始化 JPush
+
+        // 设置开启日志,发布时请关闭日志
+        JPushInterface.setDebugMode(true);
+        // 初始化 JPush
+        JPushInterface.init(this);
 
 
         initImageLoader(getApplicationContext());

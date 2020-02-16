@@ -4,7 +4,7 @@ ADDED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\Volley
 INJECTED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\VolleyDemo\src\main\AndroidManifest.xml:2:1-35:12
 INJECTED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\VolleyDemo\src\main\AndroidManifest.xml:2:1-35:12
 INJECTED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\VolleyDemo\src\main\AndroidManifest.xml:2:1-35:12
-MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.1.aar\036c70670a3e8485a2c57f16a618b483\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.1.aar\bb1db350584d508ffe0615d5a6511185\AndroidManifest.xml:17:1-24:12
 INJECTED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\VolleyDemo\src\main\AndroidManifest.xml:2:1-35:12
 INJECTED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\VolleyDemo\src\main\AndroidManifest.xml:2:1-35:12
 INJECTED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\VolleyDemo\src\main\AndroidManifest.xml:2:1-35:12
@@ -26,8 +26,8 @@ uses-sdk
 ADDED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\VolleyDemo\src\main\AndroidManifest.xml:7:5-9:41
 INJECTED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\VolleyDemo\src\main\AndroidManifest.xml:7:5-9:41
 INJECTED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\VolleyDemo\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.1.aar\036c70670a3e8485a2c57f16a618b483\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.1.aar\036c70670a3e8485a2c57f16a618b483\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.1.aar\bb1db350584d508ffe0615d5a6511185\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.1.aar\bb1db350584d508ffe0615d5a6511185\AndroidManifest.xml:20:5-43
 INJECTED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\VolleyDemo\src\main\AndroidManifest.xml:7:5-9:41
 INJECTED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\VolleyDemo\src\main\AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
@@ -48,8 +48,8 @@ ADDED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\Volley
 		ADDED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\VolleyDemo\src\main\AndroidManifest.xml:11:22-78
 application
 ADDED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\VolleyDemo\src\main\AndroidManifest.xml:14:5-33:19
-MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.1.aar\036c70670a3e8485a2c57f16a618b483\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.1.aar\036c70670a3e8485a2c57f16a618b483\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.1.aar\bb1db350584d508ffe0615d5a6511185\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Jackqgm\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.1.aar\bb1db350584d508ffe0615d5a6511185\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from C:\Users\Jackqgm\AndroidStudioProjects\BeijingNews\BeijingNews\VolleyDemo\src\main\AndroidManifest.xml:18:9-41
 	android:icon
